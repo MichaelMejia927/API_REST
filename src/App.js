@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import NavbarApi from './layouts/navbar';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Episodios from './components/Episodios'
+import Personajes from './components/Personajes';
+import Container from 'react-bootstrap/Container';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <NavbarApi />
+        <Container>
+          <Routes>
+              <Route path='/' element={<Episodios />} />
+              <Route path='/personajes' element={<Personajes />} />
+          </Routes>
+        </Container>
+      </BrowserRouter>
+    </>
   );
 }
 
