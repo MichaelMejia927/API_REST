@@ -1,3 +1,7 @@
-# Getting Started with Create React App
+# Consumo de la API de Rick y Morty
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Ingenieria Web 2
+- Universidad Minuto de Dios
+- Actividad 4
+
+https://github.com/MichaelMejia927/API_REST.git
